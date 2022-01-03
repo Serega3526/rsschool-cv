@@ -1,0 +1,245 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container{
+    width: 1230px;
+    margin: 0 auto;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #cccccc;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav ul li{
+    font-family: Poppins;
+    font-size: 20px;
+    line-height: 55px;
+}
+.content{
+    display: flex;
+}
+.left__side{
+    max-width: 480px;
+    background-color: #343945;
+}
+.myfoto{
+    width: 480px;
+}
+.myfoto img{
+    width: 100%;
+}
+.title__left{
+    position: relative;
+    margin-left: -70px;
+    padding-left: 70px;
+    margin-bottom: 35px;
+    background-color: #424753;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 26px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1.67px;
+}
+.title__left::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 40px;
+    background-color: #f2c100;
+}
+.title-block_left{
+    padding-top: 48px;
+    padding-left: 70px;
+    padding-bottom: 51px;
+}
+.title-block_right{
+    padding-top: 48px;
+    padding-left: 70px;
+}
+.title__descr-item{
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 17px;
+    padding-bottom: 34px;
+}
+.title__right{
+    position: relative;
+    margin-left: -70px;
+    padding-left: 70px;
+    margin-bottom: 35px;
+    background-color: #ebebeb;
+    color: #363636;
+    font-family: "Poppins";
+    font-size: 26px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1.67px;
+}
+.title__right::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 40px;
+    background-color: #f2c100;
+}
+.myname{
+    padding-left: 70px;
+    padding-top: 130px;
+}
+h1{
+    color: #363636;
+    font-family: "Poppins";
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 58.33px;
+}
+h2{
+    color: #363636;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 52.78px;
+}
+p{
+    color: #555555;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.22px;
+}
+.skills ul{
+    color: #555555;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.22px;
+}
+pre{
+    color: #555555;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+}
+.footer{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #1e232c;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo-github{
+    position: relative;
+    width: 200px;
+    height: auto;
+}
+.logo-rsschool{
+    width: 200px;
+    height: auto;
+}
+.logo-github a{
+    color: #ffffff;
+}
+.logo-github img{
+    max-width: 100px;
+}
+.logo-github a{
+    display: flex;
+    align-items: center;
+}
+.year{
+    color:#ffffff;
+    font-size: 20px;
+}
+.logo-rsschool img{
+    width: 150px;
+}
